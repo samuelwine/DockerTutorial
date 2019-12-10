@@ -216,6 +216,15 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "RabbitMQ.Client/5.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
       }
     }
   },
@@ -718,32 +727,50 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "RabbitMQ.Client/5.1.2": {
+      "sha512": "Xhj+un0pw4N7h37SZWptxl/NEv7f1RLHwZhXjqzkCm3w3IdbFJh+HjVyPaciD848BUYLGoEQzadx90nShsbs4Q==",
+      "type": "package",
+      "path": "rabbitmq.client/5.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/net451/RabbitMQ.Client.xml",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.5.1.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "Newtonsoft.json >= 12.0.3"
+      "Newtonsoft.json >= 12.0.3",
+      "rabbitmq.client"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\syw\\.nuget\\packages\\": {},
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\syw\\source\\repos\\Webapi\\worker\\worker.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\DockerTutorial\\worker\\worker.csproj",
       "projectName": "worker",
-      "projectPath": "C:\\Users\\syw\\source\\repos\\Webapi\\worker\\worker.csproj",
-      "packagesPath": "C:\\Users\\syw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\syw\\source\\repos\\Webapi\\worker\\obj\\",
+      "projectPath": "C:\\Users\\HP\\source\\repos\\DockerTutorial\\worker\\worker.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\DockerTutorial\\worker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\syw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -776,6 +803,10 @@
           "Newtonsoft.json": {
             "target": "Package",
             "version": "[12.0.3, )"
+          },
+          "rabbitmq.client": {
+            "target": "Package",
+            "version": "(, )"
           }
         },
         "imports": [
